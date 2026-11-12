@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tip Tracker: Server Income Log</title>
+<meta name="description" content="Free tip and income tracker for servers, bartenders and delivery drivers. Log a shift in seconds and see your real hourly pay. No account, data stays on your iPhone.">
+<link rel="icon" href="img/icon.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+  :root { --bg: #111111; --surface: #1B1B1A; --text: #F4F4F1; --muted: #9A9A95; --rule: #3A3A38; --accent: #FF6A2C; }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--text);
+         font: 18px/1.55 "IBM Plex Sans", -apple-system, "Helvetica Neue", Arial, sans-serif; }
+  a { color: var(--accent); }
+  .wrap { max-width: 1080px; margin: 0 auto; padding: 0 20px; }
+  header { display: flex; align-items: center; gap: 14px; padding: 28px 0; }
+  header img { width: 44px; height: 44px; border-radius: 10px; }
+  header span { font-size: 13px; font-weight: 600; letter-spacing: .16em; text-transform: uppercase; }
+  .hero { padding: 48px 0 24px; }
+  .bar { width: 72px; height: 8px; background: var(--accent); margin-bottom: 28px; }
+  h1 { font-size: clamp(44px, 8vw, 88px); line-height: 1.02; letter-spacing: -.03em; margin: 0 0 24px; }
+  h1 em { font-style: normal; color: var(--accent); }
+  .lead { font-size: 21px; color: var(--muted); max-width: 620px; margin: 0 0 32px; }
+  .btn { display: inline-block; padding: 18px 30px; border-radius: 20px; background: var(--text); color: var(--bg);
+         font-weight: 700; letter-spacing: .12em; text-transform: uppercase; font-size: 15px; text-decoration: none; }
+  .note { font-size: 14px; color: var(--muted); margin-top: 14px; }
+  .shots { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; margin: 56px 0; }
+  .shots img { width: 100%; height: auto; border-radius: 22px; display: block; }
+  h2 { font-size: 13px; font-weight: 600; letter-spacing: .16em; text-transform: uppercase; color: var(--muted);
+       border-top: 1px solid var(--rule); padding-top: 20px; margin: 0 0 8px; }
+  .features { display: grid; grid-template-columns: repeat(2, 1fr); gap: 40px 48px; margin: 40px 0 72px; }
+  .features h3 { font-size: 24px; margin: 8px 0; }
+  .features p { margin: 0; color: var(--muted); }
+  footer { border-top: 1px solid var(--rule); padding: 28px 0 48px; font-size: 15px; color: var(--muted);
+           display: flex; flex-wrap: wrap; gap: 12px 28px; }
+  @media (max-width: 720px) {
+    .shots { grid-template-columns: 1fr; max-width: 360px; margin-left: auto; margin-right: auto; }
+    .features { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <img src="img/icon.png" alt="">
+    <span>Tip Tracker</span>
+  </header>
+
+  <section class="hero">
+    <div class="bar"></div>
+    <h1>Know what you<br><em>really make.</em></h1>
+    <p class="lead">A fast, free income log for servers, bartenders, hosts and delivery drivers. Log a shift in seconds after work and see your real hourly pay, week by week.</p>
+    <!-- When the app is live, replace href="#" with your App Store link and the text with "Download on the App Store". -->
+    <a class="btn" href="#">Coming soon to the App Store</a>
+    <p class="note">Free, supported by ads. No account. iPhone only.</p>
+  </section>
+
+  <section class="shots">
+    <img src="img/1-home.jpg" alt="Tip Tracker home screen showing this week's earnings" loading="lazy">
+    <img src="img/2-log-shift.jpg" alt="Logging a shift with hours, cash tips, card tips and tip-out" loading="lazy">
+    <img src="img/4-year-summary.jpg" alt="Year summary with totals for cash tips, card tips, wages and hours" loading="lazy">
+  </section>
+
+  <section class="features">
+    <div><h2>Fast</h2><h3>Log a shift in seconds</h3><p>Hours or start and end time, cash tips, card tips and tip-outs. Your job and wage are filled in for you.</p></div>
+    <div><h2>Honest</h2><h3>Your real hourly rate</h3><p>Tips plus wage, divided by the hours you actually worked, for every shift, week and month.</p></div>
+    <div><h2>Organized</h2><h3>More than one job</h3><p>Add every place you work and filter by job, or see everything together.</p></div>
+    <div><h2>Year-end</h2><h3>Yearly totals and CSV export</h3><p>Cash, card, tip-outs, wages and hours per job. Export any date range as a spreadsheet.</p></div>
+    <div><h2>Private</h2><h3>Stays on your iPhone</h3><p>No account, no login, no cloud. Your shifts and earnings are never uploaded.</p></div>
+    <div><h2>Note</h2><h3>Records, not advice</h3><p>Tip Tracker is a record-keeping tool and does not give tax, legal or financial advice.</p></div>
+  </section>
+
+  <footer>
+    <a href="../">Ironwood Media</a>
+    <span>&copy; 2026 Steven Wright</span>
+    <a href="https://sites.google.com/view/ironwood-media/tip-tracker-privacy">Privacy policy</a>
+    <a href="https://sites.google.com/view/ironwood-media/tip-tracker-support">Support</a>
+    <a href="mailto:ironwoodmediadev+tiptracker@gmail.com">Contact</a>
+  </footer>
+</div>
+</body>
+</html>

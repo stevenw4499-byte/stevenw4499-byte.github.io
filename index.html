@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ironwood Media</title>
+<meta name="description" content="Simple, private iPhone apps by Ironwood Media.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+  :root { --bg: #111111; --text: #F4F4F1; --muted: #9A9A95; --rule: #3A3A38; --accent: #FF6A2C; }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--text);
+         font: 18px/1.55 "IBM Plex Sans", -apple-system, "Helvetica Neue", Arial, sans-serif; }
+  a { color: var(--accent); }
+  .wrap { max-width: 880px; margin: 0 auto; padding: 72px 20px 48px; }
+  .bar { width: 72px; height: 8px; background: var(--accent); margin-bottom: 28px; }
+  h1 { font-size: clamp(40px, 7vw, 72px); line-height: 1.04; letter-spacing: -.03em; margin: 0 0 16px; }
+  .lead { color: var(--muted); font-size: 20px; margin: 0 0 56px; }
+  h2 { font-size: 13px; font-weight: 600; letter-spacing: .16em; text-transform: uppercase; color: var(--muted);
+       border-top: 1px solid var(--rule); padding-top: 20px; margin: 0 0 8px; }
+  .app { display: flex; gap: 20px; align-items: center; padding: 24px 0; border-bottom: 1px solid var(--rule);
+         color: var(--text); text-decoration: none; }
+  .app img { width: 72px; height: 72px; border-radius: 16px; flex: none; }
+  .app strong { display: block; font-size: 22px; }
+  .app span { color: var(--muted); }
+  .app em { margin-left: auto; font-style: normal; color: var(--accent); font-weight: 600; white-space: nowrap; }
+  footer { margin-top: 64px; font-size: 15px; color: var(--muted); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="bar"></div>
+  <h1>Ironwood Media</h1>
+  <p class="lead">Simple, private iPhone apps.</p>
+
+  <h2>Apps</h2>
+  <!-- Copy this <a class="app"> block for each new app. -->
+  <a class="app" href="tiptracker/">
+    <img src="tiptracker/img/icon.png" alt="">
+    <div><strong>Tip Tracker</strong><span>Tip and income log for servers, bartenders and drivers.</span></div>
+    <em>&rarr;</em>
+  </a>
+
+  <footer>
+    Contact: <a href="mailto:ironwoodmediadev@gmail.com">ironwoodmediadev@gmail.com</a>
+  </footer>
+</div>
+</body>
+</html>
